@@ -1,0 +1,8 @@
+astor==0.8.1
+lightning==2.3.3
+spconv-cu124==2.3.8
+pymeshfix
+pyvista
+xatlas
+gsplat
+open3d==0.18.0

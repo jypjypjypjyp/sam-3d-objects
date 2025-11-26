@@ -7,6 +7,7 @@ Extracted from moge library for use in sam3d_objects pipeline.
 from typing import Optional, Tuple, Union
 import torch
 import utils3d
+
 # Import directly from moge for exact compatibility
 from moge.utils.geometry_torch import (
     normalized_view_plane_uv,

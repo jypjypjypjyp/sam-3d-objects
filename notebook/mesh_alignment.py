@@ -34,7 +34,7 @@ def load_3db_mesh(mesh_path, device='cuda'):
 
 def get_moge_pointcloud(image_tensor, device='cuda'):
     """Generate MoGe point cloud from image tensor."""
-    moge_model = MoGeModel.from_pretrained("Ruicheng/moge-vitl").to(device)
+    moge_model = MoGeModel.from_pretrained("/home/yupeng.jia/Projects/worldmodel/models/moge-vitl.pt").to(device)
     moge_model.eval()
     with torch.no_grad():
         moge_output = moge_model.infer(image_tensor)
