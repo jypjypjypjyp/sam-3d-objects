@@ -237,8 +237,6 @@ class InferencePipelinePointMap(InferencePipeline):
         pointmap_clipped = pointmap_clipped_flat.reshape(pointmap.shape)
         return pointmap_clipped
 
-
-
     def compute_pointmap(self, image, pointmap=None):
         loaded_image = self.image_to_float(image)
         loaded_image = torch.from_numpy(loaded_image)
@@ -311,7 +309,6 @@ class InferencePipelinePointMap(InferencePipeline):
             "scale": revised_scale,
             "iou": final_iou,
         }
-
 
     def run(
         self,

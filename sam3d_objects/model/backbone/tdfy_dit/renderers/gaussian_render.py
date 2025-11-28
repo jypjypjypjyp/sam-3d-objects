@@ -189,7 +189,7 @@ def render(
             Ks=Ks,
             width=int(viewpoint_camera.image_width),
             height=int(viewpoint_camera.image_height),
-            backgrounds=bg_color,
+            backgrounds=bg_color[None],
         )
         rendered_image = render_colors.squeeze(0).permute(
             2, 0, 1
