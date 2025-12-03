@@ -6,3 +6,4 @@ pymeshfix
 pyvista
 xatlas
 open3d==0.18.0
+xformers==v0.0.29.post3 --index-url https://download.pytorch.org/whl/cu124
